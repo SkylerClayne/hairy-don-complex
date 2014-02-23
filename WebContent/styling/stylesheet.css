@@ -1,0 +1,28 @@
+body {
+	background-color: #E8E8E8;
+}
+
+table {
+	width: 90%;
+	align: center;
+}
+
+.table1,div {
+	border: 0px;
+}
+
+.table1,td1 {
+	border: 0px;
+}
+
+.table2 {
+	background-color: #99FF99;
+}
+
+.table3 {
+	background-color: #99FFFF;
+}
+
+.table4 {
+	background-color: #FFFF99;
+}

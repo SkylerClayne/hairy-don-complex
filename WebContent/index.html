@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<!-- DESCRIPTION OF USED TAGS 
+	
+	GENERAL HTML TAGS
+	
+	!DOCTYPE html: Lets your computer know you're going to write some html code.
+	
+	html: Always need, opens a html file.
+	
+	head: Where the "Formalities go"
+		title: Gives your pages a title. ( As seen in at the top, browser tab)
+		
+	body: Provides a location for the "main chunk" of html.
+		hr: Creates a horizontal line across the page.
+		p: Paragraph, a place to hold things like text, tables, pictures etc.
+			table: Table provides a way to organize stuff.
+				tr: Creates a new table row.
+					td: Creates a new partition in the row you just create, i.e. table column in that row.
+						img: Places an image on the page.
+
+	STYLING TAGS
+	i: Italic.
+	b: Bold.
+	center: Centers the element your adding.
+	br: Effectively like hitting Enter on your keyboard.
+	-->
+<head>
+
+<!--This is where you'll link your stylesheet (CSS3) later-->
+<title>table exercise</title>
+<link rel="stylesheet" type="text/css" href="styling/stylesheet.css">
+</head>
+<body>
+
+	<!-- Start your first table here. (Photos and header) -->
+	<p>
+	<table border="0" class="table1">
+		<tr>
+			<td class="td1"><img src="images/LassondeLogo.png"
+				alt="Lassonde's Logo" width="200" height="75"></td>
+			<td class="td1"><i><b>Dept. of Computer Science <br>Enrollment
+						Application Form <br>Summer 2002
+				</b></i></td>
+			<td id="td1"><img src="images/yorklogo.gif" alt="York's Logo"></td>
+			</div>
+		</tr>
+	</table>
+
+	<hr>
+	</p>
+
+	<!-- Start your First table here. (ID + Messages)
+	
+
+					
+					
+					
+					
+
+
+		
+
+	-->
+
+	<table border="0" class="table2">
+		<tr>
+			<td><b>Identification</b></td>
+			<td><b>Messages</b></td>
+		</tr>
+		<tr>
+
+			<td>Prism Username</td>
+
+
+			<td rowspan="11"><br>
+				<form>
+					<textarea id="messages" rows="10" cols="50">Error goes here </textarea>
+				</form> <script>
+					var messagesValue = document.getElementById("messages").value;
+				</script> <br></td>
+
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<input id="username" type="text" />
+				</form> <script>
+					var usernameValue = document.getElementById("username").value;
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+		</tr>
+
+		<tr>
+			<td>
+				<form>
+					<input id="password" type="text" />
+				</form> <script>
+					var passwordValue = document.getElementById("password").value;
+				</script>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Student Number</td>
+		</tr>
+
+		<tr>
+			<td>
+				<form>
+					<input id="studentnumb" type="text" />
+				</form> <script>
+					var textboxValue = document.getElementById("studentnumb").value;
+				</script>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Family Name</td>
+		</tr>
+
+		<tr>
+			<td>
+				<form>
+					<input id="familyname" type="text" />
+				</form> <script>
+					var familynameValue = document.getElementById("familyname").value;
+				</script>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Given Name</td>
+		</tr>
+
+		<tr>
+			<td>
+				<form>
+					<input id="givenname" type="text" />
+				</form> <script>
+					var givennameValue = document.getElementById("givenname").value;
+				</script>
+			</td>
+		</tr>
+		</tr>
+	</table>
+
+
+	<!-- Add your Third table (Faculty, Major, Number of courses) -->
+	<table border="1" class="table3">
+
+
+		<tr>
+			<td width="200"><b>Faculty</b> { Options LSE, SC, AS }</td>
+			<td width="275"><b>Major</b> { Options, EECS, ENG, ITEC, Other }
+			</td>
+			<td width="275"><b>Number of Courses</b> { Options Want 1 course
+				Want 1 or 2 courses <br> Want 2 courses }</td>
+		</tr>
+
+
+
+
+	</table>
+
+	<!-- Add your last table here (Courses, Instructions) table i.e. the second table! -->
+
+	<table border="1" class="table4">
+
+		<td colspan="2"><b>Courses</b></td>
+		<td colspan="2"><b>Instructions</b></td>
+		<tr>
+			<td>[ Input field ] 2001 A</td>
+			<td>[ Input field ] 3101 A</td>
+			<td rowspan="8">Select your courses in priority order. <br>
+				Enter consecutive integers from 1 up and no higher than 4. <br>
+				<br> 1 is your first choice, 2 your second choice, etc. <br>
+				<br> If you specify 'Want 2 courses" and there is space in only
+				one <br> of your choices or you satisfy prerequisites for only
+				one of <br> your choices, then you will not have permission for
+				any courses.
+			</td>
+		</tr>
+		<tr>
+			<td>[ Input field ] 2001 B</td>
+			<td>[ Input field ] 3201 A</td>
+		</tr>
+		<tr>
+			<td>[ Input field ] 2011 A</td>
+			<td>[ Input field ] 3213 A</td>
+		</tr>
+		<tr>
+			<td>[ Input field ] 2011 B</td>
+			<td>[ Input field ] 3221 A</td>
+		</tr>
+		<tr>
+			<td>[ Input field ] 2021 A</td>
+			<td>[ Input field ] 3301 A</td>
+		</tr>
+		<tr>
+			<td>[ Input field ] 2021 B</td>
+			<td>[ Input field ] 3311 A</td>
+		</tr>
+		<tr>
+			<td>[ Input field ] 2031 A</td>
+			<td>[ Input field ] 3421 A</td>
+		</tr>
+		<tr>
+			<td>[ Input field ] 2031 B</td>
+			<td>[ Input field ] 3461 A</td>
+		</tr>
+
+		<tr>
+
+		</tr>
+	</table>
+
+	<!-- Add your last few pieces of text -->
+
+	<!-- Note: &nbsp;&nbsp;&nbsp;&nbsp; just adds more spaces for formatting -->
+	<p style="text-indent: 5em;">< Submit button >
+		&nbsp;&nbsp;&nbsp;&nbsp; < Clear Courses Button >
+		&nbsp;&nbsp;&nbsp;&nbsp; < Clear All Button ></p>
+
+	<!-- Insert your final horizontal line! -->
+	<hr>
+
+</body>
+</html>
