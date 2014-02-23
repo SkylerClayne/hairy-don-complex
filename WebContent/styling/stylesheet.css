@@ -3,16 +3,16 @@ body {
 }
 
 table {
-	width: 90%;
+	width: 60%;
 	align: center;
 }
 
 .table1,div {
-	border: 0px;
+	border: 10px;
 }
 
 .table1,td1 {
-	border: 0px;
+	
 }
 
 .table2 {
