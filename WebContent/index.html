@@ -77,7 +77,7 @@
 
 				<td rowspan="11"><br>
 					<center>
-						<form>
+						<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 							<textarea id="messages" rows="15" cols="50">Error messages are displayed here </textarea>
 						</form>
 						<script>
@@ -90,7 +90,7 @@
 			</tr>
 			<tr>
 				<td>
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="username" type="text" size="10" />
 					</form> <script>
 						var usernameValue = document.getElementById("username").value;
@@ -103,7 +103,7 @@
 
 			<tr>
 				<td>
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="password" type="text" size="20" />
 					</form> <script>
 						var passwordValue = document.getElementById("password").value;
@@ -117,7 +117,7 @@
 
 			<tr>
 				<td>
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="studentnumb" type="text" size="15" />
 					</form> <script>
 						var textboxValue = document
@@ -132,7 +132,7 @@
 
 			<tr>
 				<td>
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="familyname" type="text" size="40" />
 					</form> <script>
 						var familynameValue = document
@@ -147,7 +147,7 @@
 
 			<tr>
 				<td>
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="givenname" type="text" size="40" />
 					</form> <script>
 						var givennameValue = document
@@ -165,18 +165,18 @@
 
 			<tr>
 				<td width="200">
-						<form>
-							<b>Faculty</b> <select name="Faculty">
-								<option value="LSE">LSE</option>
-								<option value="SC">SC</option>
-								<option value="AS">AS</option>
-							</select>
-						</form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
+						<b>Faculty</b> <select name="Faculty">
+							<option value="LSE">LSE</option>
+							<option value="SC">SC</option>
+							<option value="AS">AS</option>
+						</select>
+					</form>
 				</td>
 				<!--  { Options LSE, SC, AS } -->
 				<td width="275">
 					<center>
-						<form action="">
+						<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 							<b>Major</b> <select name="Major">
 								<option value="EECS">EECS</option>
 								<option value="ENG">ENG</option>
@@ -188,7 +188,7 @@
 				</td>
 				<!--  { Options, EECS, ENG, ITEC, Other } -->
 				<td width="450">
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<b>Number of Courses</b> <select name="NumbCourses">
 							<option value="one">Want 1 course</option>
 							<option value="oneortwo">Want 1 or 2 courses</option>
@@ -214,35 +214,38 @@
 			<td colspan="2" width="40%"><b><center>Courses</center></b></td>
 			<td colspan="2" width="60%"><b><center>Instructions</center></b></td>
 			<tr>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="2001A" type="text" size="1" /> 2001 A
 					</form> <script>
 						var twentyohoneA = document.getElementById("2001A").value;
 					</script></td>
 
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="3101A" type="text" size="1" /> 3101 A
 					</form> <script>
 						var thirtyoneohoneA = document.getElementById("3101A").value;
 					</script></td>
-				<td rowspan="8">Select your courses in priority order.
-					Enter consecutive integers from 1 up and no higher than 4. <br>
-					<br> 1 is your first choice, 2 your second choice, etc. <br>
-					<br> If you specify 'Want 2 courses" and there is space in
-					only one of your choices or you satisfy prerequisites for
-					only one of your choices, then you will not have
-					permission for any courses.
+				<td rowspan="8">Select your courses in priority order. Enter
+					consecutive integers from 1 up and no higher than 4. <br> <br>
+					1 is your first choice, 2 your second choice, etc. <br> <br>
+					If you specify 'Want 2 courses" and there is space in only one of
+					your choices or you satisfy prerequisites for only one of your
+					choices, then you will not have permission for any courses.
 				</td>
 			</tr>
 			<tr>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="2001B" type="text" size="1" /> 2001 B
 					</form> <script>
 						var twentyohoneB = document.getElementById("2001B").value;
 					</script></td>
 
 
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="3201A" type="text" size="1" /> 3201 A
 					</form> <script>
 						var thirtytwoohoneA = document.getElementById("3201A").value;
@@ -250,14 +253,14 @@
 			</tr>
 			<tr>
 				<td>
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="2011A" type="text" size="1" /> 2011 A
 					</form> <script>
 						var twentyelevenA = document.getElementById("2011A").value;
 					</script>
 				</td>
 				<td>
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="3213A" type="text" size="1" /> 3213 A
 					</form> <script>
 						var thirtytwothirteenA = document
@@ -266,12 +269,14 @@
 				</td>
 			</tr>
 			<tr>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="2011B" type="text" size="1" /> 2011 B
 					</form> <script>
 						var twentyelevenB = document.getElementById("2011B").value;
 					</script></td>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="3221A" type="text" size="1" /> 3221 A
 					</form> <script>
 						var thirtytwotwentyoneA = document
@@ -279,13 +284,14 @@
 					</script></td>
 			</tr>
 			<tr>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="2021A" type="text" size="1" /> 2021 A
 					</form> <script>
 						var twentytwentyoneA = document.getElementById("2021A").value;
 					</script></td>
 				<td>
-					<form>
+					<form action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="3301A" type="text" size="1" /> 3301 A
 					</form> <script>
 						var thirtythreeohoneA = document
@@ -294,12 +300,14 @@
 				</td>
 			</tr>
 			<tr>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="2021B" type="text" size="1" /> 2021 B
 					</form> <script>
 						var twentytwentyoneB = document.getElementById("2021B").value;
 					</script></td>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="3311A" type="text" size="1" /> 3311 A
 					</form> <script>
 						var thirtythreeelevenA = document
@@ -307,12 +315,14 @@
 					</script></td>
 			</tr>
 			<tr>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="2031A" type="text" size="1" /> 2031 A
 					</form> <script>
 						var twentythirtyoneA = document.getElementById("2031A").value;
 					</script></td>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="3421A" type="text" size="1" /> 3421 A
 					</form> <script>
 						var thirtyfourtwentyoneA = document
@@ -320,12 +330,14 @@
 					</script></td>
 			</tr>
 			<tr>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="2031B" type="text" size="1" /> 2031 B
 					</form> <script>
 						var twentythirtyoneB = document.getElementById("2031B").value;
 					</script></td>
-				<td><form>
+				<td><form
+						action="http://www.cse.yorku.ca/~gunnar/cgi/formToTable.cgi">
 						<input id="3461A" type="text" size="1" /> 3461 A
 					</form> <script>
 						var threefoursixoneA = document.getElementById("3461A").value;
@@ -342,6 +354,39 @@
 		<!-- Note: &nbsp;&nbsp;&nbsp;&nbsp; just adds more spaces for formatting -->
 
 		<script>
+			function submitForms() {
+				// First table
+				document.getElementById("usernameValue").submit();
+				document.getElementById("passwordValue").submit();
+				document.getElementById("textboxValue").submit();
+				document.getElementById("familynameValue").submit();
+				document.getElementById("givennameValue").submit();
+				document.getElementById("messages").submit();
+
+				//Drop downs
+				document.getElementById("").submit();
+				document.getElementById("").submit();
+				document.getElementById("").submit();
+
+				// Courses
+				document.getElementById("twentyohoneA").submit();
+				document.getElementById("thirtyoneohoneA").submit();
+				document.getElementById("twentyohoneB").submit();
+				document.getElementById("thirtytwoohoneA").submit();
+				document.getElementById("twentyelevenA").submit();
+				document.getElementById("thirtytwothirteenA").submit();
+				document.getElementById("twentyelevenB").submit();
+				document.getElementById("thirtytwotwentyoneA").submit();
+				document.getElementById("twentytwentyoneA").submit();
+				document.getElementById("thirtythreeohoneA").submit();
+				document.getElementById("twentytwentyoneB").submit();
+				document.getElementById("thirtythreeelevenA").submit();
+				document.getElementById("twentythirtyoneA").submit();
+				document.getElementById("thirtyfourtwentyoneA").submit();
+				document.getElementById("twentythirtyoneB").submit();
+				document.getElementById("threefoursixoneA").submit();
+
+			}
 			function clearAll() {
 
 				document.getElementById("username").value = '';
@@ -390,7 +435,7 @@
 			}
 		</script>
 		<center>
-			<button type="button" onclick="alert('doSubmit!')">Submit</button>
+			<input type="submit" value="Submit" onclick="submitForms()" />
 			<button type="button" onclick="clearCourses()">Clear Courses</button>
 			<button type="button" onclick="clearAll()">Clear All</button>
 			</p>
