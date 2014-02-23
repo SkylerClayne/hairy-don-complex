@@ -67,8 +67,8 @@
 
 		<table class="table2">
 			<tr>
-				<td><b><center>Identification</center></b></td>
-				<td><b><center>Messages</center></b></td>
+				<td width="50%"><b><center>Identification</center></b></td>
+				<td width="50%"><b><center>Messages</center></b></td>
 			</tr>
 			<tr>
 
@@ -78,7 +78,7 @@
 				<td rowspan="11"><br>
 					<center>
 						<form>
-							<textarea id="messages" rows="10" cols="50">Error goes here </textarea>
+							<textarea id="messages" rows="15" cols="50">Error messages are displayed here </textarea>
 						</form>
 						<script>
 							var messagesValue = document
@@ -91,7 +91,7 @@
 			<tr>
 				<td>
 					<form>
-						<input id="username" type="text" />
+						<input id="username" type="text" size="10" />
 					</form> <script>
 						var usernameValue = document.getElementById("username").value;
 					</script>
@@ -104,7 +104,7 @@
 			<tr>
 				<td>
 					<form>
-						<input id="password" type="text" />
+						<input id="password" type="text" size="20" />
 					</form> <script>
 						var passwordValue = document.getElementById("password").value;
 					</script>
@@ -118,7 +118,7 @@
 			<tr>
 				<td>
 					<form>
-						<input id="studentnumb" type="text" />
+						<input id="studentnumb" type="text" size="15" />
 					</form> <script>
 						var textboxValue = document
 								.getElementById("studentnumb").value;
@@ -133,7 +133,7 @@
 			<tr>
 				<td>
 					<form>
-						<input id="familyname" type="text" />
+						<input id="familyname" type="text" size="40" />
 					</form> <script>
 						var familynameValue = document
 								.getElementById("familyname").value;
@@ -148,7 +148,7 @@
 			<tr>
 				<td>
 					<form>
-						<input id="givenname" type="text" />
+						<input id="givenname" type="text" size="40" />
 					</form> <script>
 						var givennameValue = document
 								.getElementById("givenname").value;
@@ -164,35 +164,39 @@
 
 
 			<tr>
-				<td width="200"><b>Faculty</b>
-					<form>
-						<select name="Faculty">
-							<option value="LSE">LSE</option>
-							<option value="SC">SC</option>
-							<option value="AS">AS</option>
-						</select>
-					</form></td>
+				<td width="200">
+						<form>
+							<b>Faculty</b> <select name="Faculty">
+								<option value="LSE">LSE</option>
+								<option value="SC">SC</option>
+								<option value="AS">AS</option>
+							</select>
+						</form>
+				</td>
 				<!--  { Options LSE, SC, AS } -->
-				<td width="275"><b>Major</b>
-
-					<form action="">
-						<select name="Major">
-							<option value="EECS">EECS</option>
-							<option value="ENG">ENG</option>
-							<option value="ITEC">ITEC</option>
-							<option value="OTHER">Other</option>
-						</select>
-					</form></td>
+				<td width="275">
+					<center>
+						<form action="">
+							<b>Major</b> <select name="Major">
+								<option value="EECS">EECS</option>
+								<option value="ENG">ENG</option>
+								<option value="ITEC">ITEC</option>
+								<option value="OTHER">Other</option>
+							</select>
+						</form>
+					</center>
+				</td>
 				<!--  { Options, EECS, ENG, ITEC, Other } -->
-				<td width="275"><b>Number of Courses</b>
-
+				<td width="450">
 					<form>
-						<select name="NumbCourses">
+						<b>Number of Courses</b> <select name="NumbCourses">
 							<option value="one">Want 1 course</option>
 							<option value="oneortwo">Want 1 or 2 courses</option>
 							<option value="two">Want 2 courses</option>
 						</select>
-					</form></td>
+					</form>
+
+				</td>
 
 				<!-- { Options Want 1 course
 				Want 1 or 2 courses <br> Want 2 courses } -->
@@ -207,60 +211,125 @@
 
 		<table class="table4">
 
-			<td colspan="2"><b><center>Courses</center></b></td>
-			<td colspan="2"><b><center>Instructions</center></b></td>
+			<td colspan="2" width="40%"><b><center>Courses</center></b></td>
+			<td colspan="2" width="60%"><b><center>Instructions</center></b></td>
 			<tr>
 				<td><form>
-						<input id="2001A" type="text" size="1" />
+						<input id="2001A" type="text" size="1" /> 2001 A
 					</form> <script>
-						var usernameValue = document.getElementById("2001A").value;
-					</script>2001 A</td>
+						var twentyohoneA = document.getElementById("2001A").value;
+					</script></td>
 
 				<td><form>
-						<input id="3101A" type="text" size="1" />
+						<input id="3101A" type="text" size="1" /> 3101 A
 					</form> <script>
-						var usernameValue = document.getElementById("3101A").value;
-					</script>3101 A</td>
-				<td rowspan="8">Select your courses in priority order. <br>
+						var thirtyoneohoneA = document.getElementById("3101A").value;
+					</script></td>
+				<td rowspan="8">Select your courses in priority order.
 					Enter consecutive integers from 1 up and no higher than 4. <br>
 					<br> 1 is your first choice, 2 your second choice, etc. <br>
 					<br> If you specify 'Want 2 courses" and there is space in
-					only one <br> of your choices or you satisfy prerequisites for
-					only one of <br> your choices, then you will not have
+					only one of your choices or you satisfy prerequisites for
+					only one of your choices, then you will not have
 					permission for any courses.
 				</td>
 			</tr>
 			<tr>
 				<td><form>
-						<input id="2001B" type="text" size="1" />
+						<input id="2001B" type="text" size="1" /> 2001 B
 					</form> <script>
-						var usernameValue = document.getElementById("2001B").value;
-					</script> 2001 B</td>
-				<td>[ Input field ] 3201 A</td>
+						var twentyohoneB = document.getElementById("2001B").value;
+					</script></td>
+
+
+				<td><form>
+						<input id="3201A" type="text" size="1" /> 3201 A
+					</form> <script>
+						var thirtytwoohoneA = document.getElementById("3201A").value;
+					</script></td>
 			</tr>
 			<tr>
-				<td>[ Input field ] 2011 A</td>
-				<td>[ Input field ] 3213 A</td>
+				<td>
+					<form>
+						<input id="2011A" type="text" size="1" /> 2011 A
+					</form> <script>
+						var twentyelevenA = document.getElementById("2011A").value;
+					</script>
+				</td>
+				<td>
+					<form>
+						<input id="3213A" type="text" size="1" /> 3213 A
+					</form> <script>
+						var thirtytwothirteenA = document
+								.getElementById("3213A").value;
+					</script>
+				</td>
 			</tr>
 			<tr>
-				<td>[ Input field ] 2011 B</td>
-				<td>[ Input field ] 3221 A</td>
+				<td><form>
+						<input id="2011B" type="text" size="1" /> 2011 B
+					</form> <script>
+						var twentyelevenB = document.getElementById("2011B").value;
+					</script></td>
+				<td><form>
+						<input id="3221A" type="text" size="1" /> 3221 A
+					</form> <script>
+						var thirtytwotwentyoneA = document
+								.getElementById("3221A").value;
+					</script></td>
 			</tr>
 			<tr>
-				<td>[ Input field ] 2021 A</td>
-				<td>[ Input field ] 3301 A</td>
+				<td><form>
+						<input id="2021A" type="text" size="1" /> 2021 A
+					</form> <script>
+						var twentytwentyoneA = document.getElementById("2021A").value;
+					</script></td>
+				<td>
+					<form>
+						<input id="3301A" type="text" size="1" /> 3301 A
+					</form> <script>
+						var thirtythreeohoneA = document
+								.getElementById("3301A").value;
+					</script>
+				</td>
 			</tr>
 			<tr>
-				<td>[ Input field ] 2021 B</td>
-				<td>[ Input field ] 3311 A</td>
+				<td><form>
+						<input id="2021B" type="text" size="1" /> 2021 B
+					</form> <script>
+						var twentytwentyoneB = document.getElementById("2021B").value;
+					</script></td>
+				<td><form>
+						<input id="3311A" type="text" size="1" /> 3311 A
+					</form> <script>
+						var thirtythreeelevenA = document
+								.getElementById("3311A").value;
+					</script></td>
 			</tr>
 			<tr>
-				<td>[ Input field ] 2031 A</td>
-				<td>[ Input field ] 3421 A</td>
+				<td><form>
+						<input id="2031A" type="text" size="1" /> 2031 A
+					</form> <script>
+						var twentythirtyoneA = document.getElementById("2031A").value;
+					</script></td>
+				<td><form>
+						<input id="3421A" type="text" size="1" /> 3421 A
+					</form> <script>
+						var thirtyfourtwentyoneA = document
+								.getElementById("3421A").value;
+					</script></td>
 			</tr>
 			<tr>
-				<td>[ Input field ] 2031 B</td>
-				<td>[ Input field ] 3461 A</td>
+				<td><form>
+						<input id="2031B" type="text" size="1" /> 2031 B
+					</form> <script>
+						var twentythirtyoneB = document.getElementById("2031B").value;
+					</script></td>
+				<td><form>
+						<input id="3461A" type="text" size="1" /> 3461 A
+					</form> <script>
+						var threefoursixoneA = document.getElementById("3461A").value;
+					</script></td>
 			</tr>
 
 			<tr>
@@ -271,12 +340,59 @@
 		<!-- Add your last few pieces of text -->
 
 		<!-- Note: &nbsp;&nbsp;&nbsp;&nbsp; just adds more spaces for formatting -->
+
+		<script>
+			function clearAll() {
+
+				document.getElementById("username").value = '';
+				document.getElementById("password").value = '';
+				document.getElementById("studentnumb").value = '';
+				document.getElementById("familyname").value = '';
+				document.getElementById("givenname").value = '';
+
+				// Courses.
+
+				document.getElementById("2001B").value = '';
+				document.getElementById("3101A").value = '';
+				document.getElementById("2001A").value = '';
+				document.getElementById("3201A").value = '';
+				document.getElementById("2011A").value = '';
+				document.getElementById("3213A").value = '';
+				document.getElementById("2011B").value = '';
+				document.getElementById("3221A").value = '';
+				document.getElementById("2021A").value = '';
+				document.getElementById("3301A").value = '';
+				document.getElementById("2021B").value = '';
+				document.getElementById("3311A").value = '';
+				document.getElementById("2031A").value = '';
+				document.getElementById("3421A").value = '';
+				document.getElementById("2031B").value = '';
+				document.getElementById("3461A").value = '';
+			}
+
+			function clearCourses() {
+				document.getElementById("2001B").value = '';
+				document.getElementById("3101A").value = '';
+				document.getElementById("2001A").value = '';
+				document.getElementById("3201A").value = '';
+				document.getElementById("2011A").value = '';
+				document.getElementById("3213A").value = '';
+				document.getElementById("2011B").value = '';
+				document.getElementById("3221A").value = '';
+				document.getElementById("2021A").value = '';
+				document.getElementById("3301A").value = '';
+				document.getElementById("2021B").value = '';
+				document.getElementById("3311A").value = '';
+				document.getElementById("2031A").value = '';
+				document.getElementById("3421A").value = '';
+				document.getElementById("2031B").value = '';
+				document.getElementById("3461A").value = '';
+			}
+		</script>
 		<center>
 			<button type="button" onclick="alert('doSubmit!')">Submit</button>
-			<button type="button" onclick="alert('doClearCourses!')">Clear
-				Courses</button>
-			<button type="button" onclick="alert('doClearAll!')">Clear
-				All</button>
+			<button type="button" onclick="clearCourses()">Clear Courses</button>
+			<button type="button" onclick="clearAll()">Clear All</button>
 			</p>
 		</center>
 		<!-- Insert your final horizontal line! -->

@@ -3,12 +3,12 @@ body {
 }
 
 table {
-	width: 60%;
+	width: 50%;
 	align: center;
 }
 
 .table1,div {
-	border: 10px;
+	border = 0px;
 }
 
 .table1,td1 {
@@ -17,12 +17,15 @@ table {
 
 .table2 {
 	background-color: #99FF99;
+	border: 1px solid;
 }
 
 .table3 {
 	background-color: #99FFFF;
+	border: 1px solid;
 }
 
 .table4 {
 	background-color: #FFFF99;
+	border: 1px solid;
 }
