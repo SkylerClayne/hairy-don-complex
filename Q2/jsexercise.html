@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript name exercise</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<center>
+			<h1>
+				<span style="color: red;">JavaScript exercise 1</span>
+			</h1>
+
+		</center>
+
+		<script type="text/javascript" src="functions.js"></script>
+		<button type="button" onclick="setName()">Set Name</button>
+		Set a fixed name to save typing a name for easier testing
+
+		<form>
+			<input type="text" id="enterfullname" value="Enter full name here">
+		</form>
+		<p>Full name means given-name family-name</p>
+
+		<div id="names2">
+			<h2 id="gname2" style="color: red;"></h2>
+			<h2 id="fname2" style="color: blue;"></h2>
+		</div>
+		<form id="names">
+			Given Name <input type="text" id="gname"> <br> Family
+			Name <input type="text" id="fname">
+		</form>
+
+		<button type="button" onclick="splitName()">Split name</button>
+		<button type="button" onclick="givenName()">Given Name</button>
+		<button type="button" onclick="familyName()">Family name</button>
+		<button type="button" onclick="doAll()">Do All</button>
+		<button type="button" onclick="swapName()">Swap Names</button>
+		<button type="button" onclick="clearSplitName()">Clear Split
+			Name</button>
+		<button type="button" onclick="clearGivenName()">Clear Given
+			Name</button>
+		<button type="button" onclick="clearFamilyName()">Clear
+			Family Name</button>
+		<button type="button" onclick="clearAll()">Clear All</button>
+		<input type="button" id="hideinfo" onclick="hideInfo()"
+			value="Hide Info">
+
+	</div>
+
+</body>
+</html>
