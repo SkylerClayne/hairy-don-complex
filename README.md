@@ -1,9 +1,12 @@
 hairy-don-complex
 =================
 
-Some html, css3 and javascript.  
+Some html, css3 and javascript.
 
 -------------------------------
+
+Fluffing my github
+=====
 
 Project done as a test to myself in my early staged of web development.  
 
