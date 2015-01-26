@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100&subset=cyrillic,latin,greek);
+
+body {
+	font-family: Roboto;
+	font-weight: 300;	
+	color: #2a2a2a;
+}
+
+nav {
+	font-weight: 400;
+}
+
+.parag {
+	margin-bottom: 2em;
+	font-size: 16px;
+}
+
+footer {
+	font-weight: 100;
+}
+
+footer a, footer .shake{
+	text-decoration: none;
+	color: #2a2a2a;
+}
+
+#webserv{
+	width: 100%;
+	height: 775px;
+}
+
+#jscript {
+
+	width: 100%;
+	height: 500px;
+}
+
+h1, h2{
+	margin-top: 5%;
+}
